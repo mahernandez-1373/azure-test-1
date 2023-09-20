@@ -19,13 +19,13 @@ stages:
     steps:
     - bash: echo Build mark
 
-- stage:devDeploy
+- stage: devDeploy
   jobs:
     - job: Job_devDeploy
       steps:
       - bash: echo stage devDeploy
 
-- stage:prodDeploy
+- stage: prodDeploy
   jobs:
       - job: prodDeploy
         steps:
