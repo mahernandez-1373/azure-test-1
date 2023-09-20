@@ -12,16 +12,16 @@ pool:
 stages:
 - stage: Build
   jobs:
-  - job: Job Build
+  - job: Job_Build
     steps:
     - bash: echo Hello, world!
-  - job:Job Build mark
+  - job: Job_Build_mark
     steps:
     - bash: echo Build mark
 
 - stage:devDeploy
   jobs:
-    - job: Job devDeploy
+    - job: Job_devDeploy
       steps:
       - bash: echo stage devDeploy
 
